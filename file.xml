@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employees>
+    <employee>
+        <id>1105</id>
+        <firstName>ABCD</firstName>
+        <lastName>EFGH</lastName>
+        <hobbies>Reading</hobbies>
+    </employee>
+    <employee>
+        <id>1234</id>
+        <firstName>Hello</firstName>
+        <lastName>World</lastName>
+        <hobbies>Playing</hobbies>
+        <hobbies>ABCD</hobbies>
+    </employee>
+</employees>

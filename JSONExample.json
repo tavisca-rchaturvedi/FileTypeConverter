@@ -1,0 +1,11 @@
+[{
+  "firstName" : "ABCD",
+  "lastName" :"EFGH",
+  "empID" : 1105,
+  "hobbies" : ["Reading"]
+},{
+  "firstName" : "Hello",
+  "lastName" : "World",
+  "empID" : 1234,
+  "hobbies" : ["Playing", "ABCD"]
+}]

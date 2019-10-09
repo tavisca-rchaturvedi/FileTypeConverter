@@ -2,10 +2,20 @@
   "firstName" : "ABCD",
   "lastName" :"EFGH",
   "empID" : 1105,
-  "hobbies" : ["Reading"]
+  "dept" : {"id" :  1, "name":  "HR"}
 },{
   "firstName" : "Hello",
   "lastName" : "World",
   "empID" : 1234,
-  "hobbies" : ["Playing", "ABCD"]
+  "dept" : {"id": 2, "name":  "Tech"}
+},{
+  "firstName" : "Hello1",
+  "lastName" : "World1",
+  "empID" : 1235,
+  "dept" : {"id": 2, "name":  "Tech"}
+},{
+  "firstName" : "Hello2",
+  "lastName" : "World2",
+  "empID" : 1236,
+  "dept" : {"id": 1, "name":  "HR"}
 }]

@@ -4,14 +4,37 @@
         <id>1105</id>
         <firstName>ABCD</firstName>
         <lastName>EFGH</lastName>
-        <hobbies>Reading</hobbies>
+        <empDept>
+            <id>1</id>
+            <name>HR</name>
+        </empDept>
     </employee>
     <employee>
         <id>1234</id>
         <firstName>Hello</firstName>
         <lastName>World</lastName>
-        <hobbies>Playing</hobbies>
-        <hobbies>ABCD</hobbies>
+        <empDept>
+            <id>2</id>
+            <name>Tech</name>
+        </empDept>
+    </employee>
+    <employee>
+        <id>1235</id>
+        <firstName>Hello1</firstName>
+        <lastName>World1</lastName>
+        <empDept>
+            <id>2</id>
+            <name>Tech</name>
+        </empDept>
+    </employee>
+    <employee>
+        <id>1236</id>
+        <firstName>Hello2</firstName>
+        <lastName>World2</lastName>
+        <empDept>
+            <id>1</id>
+            <name>HR</name>
+        </empDept>
     </employee>
 </employees>
 

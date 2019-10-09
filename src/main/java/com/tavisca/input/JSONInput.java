@@ -1,5 +1,6 @@
 package com.tavisca.input;
 //import jdk.nashorn.internal.parser.JSONParser;
+import com.tavisca.Department;
 import com.tavisca.Employee;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -27,14 +28,8 @@ public class JSONInput implements Input {
                 String firstName = (String) job.get("firstName");
                 String lastName = (String) job.get("lastName");
                 long id = (Long) job.get("empID");
-                JSONArray hobbieArray = (JSONArray) job.get("hobbies");
-                ListIterator hi  = hobbieArray.listIterator();
-                List<String> hobbies = new ArrayList<>();
-                while(hi.hasNext()){
-                    hobbies.add((String)hi.next());
-                }
-
-                employees.add(new Employee(id, firstName, lastName, hobbies));
+                JSONObject empDept =  (JSONObject) job.get("dept");
+                employees.add(new Employee(id, firstName, lastName, new Department((long)empDept.get("id"), (String)empDept.get("name"))));
             }
 
 

@@ -13,7 +13,7 @@ public class Main {
         Employees employees = new Employees();
         employees.setEmployees(jsonInput.input());
 
-        Converter converter = new CSVConverter();
+        Converter converter = new JSONConverter();
         converter.convert(employees);
     }
 

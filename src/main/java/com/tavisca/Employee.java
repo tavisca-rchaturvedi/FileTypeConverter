@@ -9,10 +9,10 @@ import java.util.List;
 @XmlRootElement(name = "employee")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Employee {
-    long id;
-    String firstName;
-    String lastName;
-    List<String> hobbies;
+    public long id;
+    public String firstName;
+    public String lastName;
+    public List<String> hobbies;
 
 
     public Employee(){

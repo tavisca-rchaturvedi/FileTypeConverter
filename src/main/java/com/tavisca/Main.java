@@ -1,5 +1,6 @@
 package com.tavisca;
 
+import com.tavisca.converter.CSVConverter;
 import com.tavisca.converter.Converter;
 import com.tavisca.converter.JSONConverter;
 import com.tavisca.converter.XMLConverter;
@@ -12,7 +13,7 @@ public class Main {
         Employees employees = new Employees();
         employees.setEmployees(jsonInput.input());
 
-        Converter converter = new JSONConverter();
+        Converter converter = new CSVConverter();
         converter.convert(employees);
     }
 

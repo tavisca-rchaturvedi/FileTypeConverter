@@ -2,20 +2,20 @@
   "firstName" : "ABCD",
   "lastName" :"EFGH",
   "empID" : 1105,
-  "dept" : {"id" :  1, "name":  "HR"}
+  "deptId" : 1
 },{
   "firstName" : "Hello",
   "lastName" : "World",
   "empID" : 1234,
-  "dept" : {"id": 2, "name":  "Tech"}
+  "deptId" : 2
 },{
   "firstName" : "Hello1",
   "lastName" : "World1",
   "empID" : 1235,
-  "dept" : {"id": 2, "name":  "Tech"}
+  "deptId" : 2
 },{
   "firstName" : "Hello2",
   "lastName" : "World2",
   "empID" : 1236,
-  "dept" : {"id": 1, "name":  "HR"}
+  "deptId" : 1
 }]

@@ -1,10 +1,10 @@
 [{
-  "id": 1,
+  "deptId": 1,
   "name": "HR"
 },{
-  "id": 2,
+  "deptId": 2,
   "name": "Tech"
 },{
-  "id": 3,
+  "deptId": 3,
   "name": "Useless"
 }]

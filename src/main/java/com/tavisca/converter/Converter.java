@@ -1,8 +1,9 @@
 package com.tavisca.converter;
 
+import com.tavisca.Departments;
 import com.tavisca.Employees;
 
 public interface Converter {
 
-    public void convert(Employees employees);
+    public void convert(Departments departments);
 }

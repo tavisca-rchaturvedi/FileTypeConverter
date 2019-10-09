@@ -4,17 +4,26 @@ import com.tavisca.converter.CSVConverter;
 import com.tavisca.converter.Converter;
 import com.tavisca.converter.JSONConverter;
 import com.tavisca.converter.XMLConverter;
-import com.tavisca.input.JSONInput;
+import com.tavisca.input.DepartmentInput;
+import com.tavisca.input.DepartmentInputInterface;
+import com.tavisca.input.EmployeeInput;
+import com.tavisca.input.EmployeeInputInterface;
 
 public class Main {
 
     public static void main(String[] args){
-        JSONInput jsonInput = new JSONInput();
+        EmployeeInputInterface employeeInput = new EmployeeInput();
         Employees employees = new Employees();
-        employees.setEmployees(jsonInput.input());
+        employees.setEmployees(employeeInput.input());
 
-        Converter converter = new JSONConverter();
-        converter.convert(employees);
+        DepartmentInputInterface departmentInput = new DepartmentInput();
+        Departments departments = new Departments();
+        departments.setDepartments(departmentInput.input());
+
+        departments = JoinEmployeeAndDept.Join(departments, employees);
+
+        Converter converter = new XMLConverter();
+        converter.convert(departments);
     }
 
 }

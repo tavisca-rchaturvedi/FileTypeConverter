@@ -3,6 +3,7 @@ package com.tavisca.converter;
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.tavisca.Departments;
 import com.tavisca.Employees;
 import com.tavisca.writer.FileWriter;
 
@@ -10,7 +11,7 @@ import java.io.IOException;
 
 public class JSONConverter implements Converter {
     @Override
-    public void convert(Employees employees) {
+    public void convert(Departments employees) {
         ObjectMapper obj = new ObjectMapper();
         try{
             String jsonStr = obj.writeValueAsString(employees);
